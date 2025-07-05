@@ -15,8 +15,8 @@ with st.container():
 
 # Sidebar settings
 st.sidebar.header("⚙️ Summary Settings")
-max_length = st.sidebar.slider("Maximum Summary Length", min_value=20, max_value=300, value=100, step=10)
-min_length = st.sidebar.slider("Minimum Summary Length", min_value=10, max_value=max_length-10, value=30, step=5)
+max_length = st.sidebar.slider("Maximum Summary Length", min_value=10, max_value=300, value=50, step=10)
+# min_length = st.sidebar.slider("Minimum Summary Length", min_value=10, max_value=max_length-10, value=30, step=5)
 
 # Process when text is entered
 if text:
@@ -28,7 +28,7 @@ if text:
             framework="pt",
             do_sample=False,
             max_length=max_length,
-            min_length=min_length,
+            min_length=10,
         )
         summary = summarizer("summarize: " + text)
         st.success("✅ Summary generated successfully!")
