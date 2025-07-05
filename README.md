@@ -1,18 +1,29 @@
-# 🧠 AI-Powered Text Summarizer
+🧠 AI-Powered Text Summarizer
+A simple, interactive web application built with Streamlit and Hugging Face's T5 Transformer model to summarize long pieces of text into short, meaningful summaries.
 
-A simple and elegant web app built using **Streamlit** and the **T5 Transformer model** to automatically summarize large blocks of text. This app is perfect for extracting key insights from articles, reports, essays, and more.
+📋 Features
+✅ Summarizes any text using t5-small transformer model
 
-## ✨ Features
+🛠 Adjustable minimum and maximum summary length from sidebar
 
-- Summarizes text using Hugging Face's `t5-small` model
-- Adjustable summary length (min/max)
-- Clean and responsive user interface
-- Built with Python, Streamlit, and Transformers
+💻 Clean and responsive web interface (no coding skills required)
 
-## 🚀 How to Run the App Locally
+🚀 Powered by Hugging Face Transformers and PyTorch
 
-### 1. Clone the Repository
+🔧 Tech Stack
+Streamlit
 
-```bash
-git clone https://github.com/your-username/TextSummarizerApp.git
-cd TextSummarizerApp
+Transformers
+
+PyTorch
+
+Python 3.7+
+
+📄 Example Summary Output
+Input:
+
+In a world often dominated by negativity, it's important to remember the power of kindness and compassion. Small acts of kindness have the ability to brighten someone's day...
+
+Output:
+
+Kindness and compassion can make a big impact. Small acts can uplift others and spread positivity.
